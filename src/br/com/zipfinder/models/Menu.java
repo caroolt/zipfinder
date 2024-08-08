@@ -63,6 +63,8 @@ public class Menu {
                 String uf = scanner.nextLine();
                 System.out.println("Enter City: ");
                 String city = scanner.nextLine();
+                // manual coding of spaces because the via cep API only accepts if there is a space and if you put the + that is put in URLEncoder it doesn't work.
+                city = city.replace(" ", "%20");
                 System.out.println("Enter Address without a complement: ");
                 String address = scanner.nextLine();
                 address = URLEncoder.encode(address, StandardCharsets.UTF_8);
