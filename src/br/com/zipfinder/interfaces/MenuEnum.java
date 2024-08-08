@@ -1,6 +1,6 @@
-package br.com.zipfinder.models;
+package br.com.zipfinder.interfaces;
 
-public enum MenuType {
+public enum MenuEnum {
     MAIN_MENU,
     ZIP_CODE_MENU,
     ADDRESS_MENU;
